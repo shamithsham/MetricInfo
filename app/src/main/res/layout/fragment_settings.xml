@@ -33,6 +33,7 @@
                 android:id="@+id/logoCard"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginStart="0dp"
                 app:cardCornerRadius="60dp">
 
@@ -55,14 +56,14 @@
                     android:layout_height="wrap_content"
                     android:text="Demo (123)"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+91 6712336126"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/darker_gray" />
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -78,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Others"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
@@ -110,6 +111,7 @@
                 android:text="Base Location"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:layout_marginStart="5dp" />
 
         </LinearLayout>
@@ -119,8 +121,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5, Race Course Rd, Racecourse, Gandhi Nagar, Bengaluru, Karnataka 560009, India"
-            android:textSize="14sp"
-            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textColor="@color/black"
             android:layout_marginBottom="24dp" />
 
         <!-- Divider -->
@@ -135,7 +137,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Settings"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
@@ -158,6 +160,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Track me every 1 Min"
+            android:textSize="12sp"
+            android:textColor="@color/black"
             android:layout_marginStart="5dp" />
 
     </LinearLayout>
@@ -179,6 +183,8 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
             android:text="Remind me 30 Min early" />
 
 
@@ -202,6 +208,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Default MOT Car"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             android:layout_marginStart="5dp" />
 
     </LinearLayout>
@@ -223,6 +231,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Refer Metrichfo"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             android:layout_marginStart="5dp"
             />
 
@@ -245,6 +255,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Theme Purple"
+            android:textColor="@color/black"
+            android:textSize="12sp"
             android:layout_marginStart="5dp"/>
 
     </LinearLayout>
@@ -267,6 +279,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Logout"
+                android:textColor="@color/black"
+                android:textSize="12sp"
                 android:layout_marginStart="5dp"/>
 
         </LinearLayout>
