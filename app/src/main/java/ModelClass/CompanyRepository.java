@@ -75,21 +75,17 @@ public class CompanyRepository {
 
     }
     public void filterCompanies(String query) {
-        if (query == null || query.isEmpty()) {
-            companiesLiveData.postValue(allCompanies);
-            return;
-        }
-
-
         ArrayList<Company> filteredList = new ArrayList<>();
-        String lowerCaseQuery = query.toLowerCase();
-
-        for (Company company : allCompanies) {
-            if (company.getClientName().toLowerCase().contains(lowerCaseQuery) ||
-                    company.getClientId().toLowerCase().contains(lowerCaseQuery)) {
-                filteredList.add(company);
+        if (query == null || query.isEmpty()) {
+            filteredList.addAll(allCompanies);
+        } else {
+            for (Company company : allCompanies) {
+                if (company.getClientName().toLowerCase().contains(query.toLowerCase())) {
+                    filteredList.add(company);
+                }
             }
         }
         companiesLiveData.postValue(filteredList);
     }
+
 }

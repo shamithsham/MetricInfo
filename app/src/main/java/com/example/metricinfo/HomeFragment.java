@@ -57,34 +57,9 @@ public class HomeFragment extends Fragment {
         checkOutButton = view.findViewById(R.id.checkOutButton);
         welcomeText = view.findViewById(R.id.titleText);
 
-       /*
-        statusText = view.findViewById(R.id.status_text);
-        checkInTimeText = view.findViewById(R.id.check_in_time);
-        checkOutStatusText = view.findViewById(R.id.check_out_status);
-        workDurationText = view.findViewById(R.id.work_duration);
-        locationText = view.findViewById(R.id.location_text);*/
 
 
     }
 
-   /* private void setupClickListeners() {
-        checkOutButton.setOnClickListener(v -> {
-            // Handle check out action
-            checkOutStatusText.setText("Checked Out");
-            checkOutButton.setText("Check In");
-            statusText.setText("You are Off duty");
-        });
 
-
-    }
-
-    private void updateCurrentTime() {
-        SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm a", Locale.getDefault());
-        String currentTime = timeFormat.format(new Date());
-        checkInTimeText.setText(currentTime);
-
-        // Set work duration (example: 0h 8m)
-        workDurationText.setText("0h 8m");
-        checkOutStatusText.setText("Check Out");
-    }*/
 }

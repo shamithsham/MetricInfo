@@ -25,7 +25,7 @@ public class SyncFragment extends Fragment {
         float textWidth = welcomeText.getPaint().measureText(welcomeText.getText().toString());
 
         Shader textShader = new LinearGradient(
-                0, 0, textWidth, 0,   // horizontal gradient (left → right)
+                0, 0, textWidth, 0,
                 new int[]{Color.parseColor("#671587"), Color.parseColor("#FF5722")},
                 null,
                 Shader.TileMode.CLAMP

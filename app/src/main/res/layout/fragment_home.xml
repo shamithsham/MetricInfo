@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F4F8"
+    android:background="@color/white"
     android:fillViewport="true"
     tools:context=".MainActivity">
 
@@ -15,7 +15,7 @@
     android:background="#F5F4F8"
     android:orientation="vertical">
 
-    <!-- Header -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Logo and Office Illustration -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +89,6 @@
 
     </LinearLayout>
 
-    <!-- Greeting -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -118,13 +116,6 @@
     </LinearLayout>
 
 
-
-  <!--  <View
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
--->
-    <!-- Quick Actions -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -162,6 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:padding="5dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             android:orientation="horizontal"
@@ -173,6 +165,7 @@
                 android:layout_height="100dp"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
+                android:layout_marginBottom="1dp"
                 app:cardCornerRadius="20dp">
 
                 <LinearLayout
@@ -267,7 +260,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Current Location -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -298,7 +290,7 @@
             android:textSize="12sp" />
     </LinearLayout>
 
-    <!-- Check Out Button -->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/checkOutButton"
         android:layout_width="match_parent"
@@ -312,7 +304,7 @@
         android:textSize="14sp"
         android:textStyle="bold" />
 
-    <!-- Bottom Status -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

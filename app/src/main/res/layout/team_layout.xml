@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,14 +14,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/app_color_light"
         android:padding="12dp">
 
-        <!-- Row: Company Name + Re-tag -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/mi"
+                android:layout_marginEnd="6dp"
+                app:tint="@color/purple_700" />
 
             <TextView
                 android:id="@+id/tvCompanyName"
@@ -49,11 +58,11 @@
                 app:tint="@color/purple_700" />
         </LinearLayout>
 
-        <!-- Row: Contact person -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -73,13 +82,14 @@
                 android:textSize="10sp" />
         </LinearLayout>
 
-        <!-- Row: Phone -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
+
 
             <ImageView
                 android:layout_width="18dp"
@@ -94,23 +104,16 @@
                 android:layout_height="match_parent"
                 android:autoLink="phone"
                 android:text="9727704641"
-                android:textColor="@color/black"
+                android:textColor="@color/app_color"
                 android:textSize="10sp" />
-        </LinearLayout>
 
-        <!-- Row: Email -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
 
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/mail"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="6dp"
+                android:src="@drawable/mail"
                 app:tint="@color/purple_700" />
 
             <TextView
@@ -119,9 +122,9 @@
                 android:layout_height="wrap_content"
                 android:text="Unknown1@gmail.com"
                 android:textSize="10sp"
-                android:textColor="@color/black"
-                android:autoLink="email"/>
+                android:textColor="@color/app_color" />
+
         </LinearLayout>
 
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>

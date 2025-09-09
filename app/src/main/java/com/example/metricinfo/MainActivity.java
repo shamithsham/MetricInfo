@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         fragmentManager = getSupportFragmentManager();
 
-        // Load default fragment (Home)
+
         if (savedInstanceState == null) {
             loadFragment(new HomeFragment());
         }
